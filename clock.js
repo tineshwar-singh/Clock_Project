@@ -30,7 +30,7 @@ function setClock() {
     hours.style.transform = `rotateZ(${hourDeg}deg)`;
     minutes.style.transform = `rotateZ(${minuteDeg}deg)`;
     seconds.style.transform = `rotateZ(${secondDeg}deg)`;
-    showClock.innerHTML = `${hh%12} : ${mm} : ${hh>12 ? "PM" : "AM"}`;
+    showClock.innerHTML = `${hh%12} : ${mm} ${hh>12 ? "PM" : "AM"}`;
 }
 setInterval(setClock, 1000)
 setClock();
