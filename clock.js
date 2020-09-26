@@ -6,7 +6,7 @@ function digitalClock() {
     let seconds = date.getSeconds();
     let am_pm = date.getHours()<12 ? "AM" : "PM" ;
 
-    document.getElementById("digitalClock").innerHTML = `<h1>${hours%12 }:${minutes}:${seconds} ${am_pm}</h1>`;
+    document.getElementById("digitalClock").innerHTML = `<h1>${hours%12}:${minutes}:${seconds} ${am_pm}</h1>`;
 }
 digitalClock();
 setInterval(digitalClock, 1000);
